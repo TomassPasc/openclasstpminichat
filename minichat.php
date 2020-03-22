@@ -30,10 +30,12 @@
     $reponse = $bdd->query('SELECT * FROM manichat ORDER BY ID DESC LIMIT 0,10');
 
 
-    while ($donnees = $reponse->fetch()){
-        echo 'good';
+    while ($donnees = $reponse->fetch())
+        {
+        echo $donnees['pseudo'] . ': ' . $donnees['message'];
+        
 
-    }
+        }
 
 
  ?>   
