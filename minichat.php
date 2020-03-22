@@ -32,12 +32,15 @@
 
     while ($donnees = $reponse->fetch())
         {
-        echo $donnees['pseudo'] . ': ' . $donnees['message'];
+        ?>
+        <P>
+        <strong> <?php echo $donnees['pseudo'] . ': ';?></strong>
+        <?php echo $donnees['message']; ?>
         
+        </p>
 
-        }
+        <?php }
 
-
- ?>   
+ ?> 
     </body>
 </html>
