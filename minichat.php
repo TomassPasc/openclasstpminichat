@@ -34,8 +34,8 @@
         {
         ?>
         <P>
-        <strong> <?php echo $donnees['pseudo'] . ': ';?></strong>
-        <?php echo $donnees['message']; ?>
+        <strong> <?php echo htmlspecialchars($donnees['pseudo']) . ': ';?></strong>
+        <?php echo htmlspecialchars($donnees['message']); ?>
         
         </p>
 
